@@ -1,0 +1,210 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+    background-color: rgb(0, 0, 0);
+    background-image:url(ja2.jpg); 
+}
+#wrapper {
+    width: 1000px;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.26);
+	margin: 20px auto;
+}
+#calculator{
+	width: 400px;
+	height: 500px;
+	background-color: rgb(217, 223, 222);
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+    border-radius: 5px;
+}
+
+#result{
+    height: 100px;}
+#history{
+        text-align: right;
+        height: 20px;
+        margin: 0 20px;
+        padding-top: 20px;
+        font-size: 15px;
+        color: #706c6c;
+    }
+    .display {
+        text-align: right;
+        height: 40px;
+        margin: 10px 20px;
+        font-size: 30px;
+    }
+    #keyboard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        height: 400px;
+    }
+    .operator, .number {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        border-radius: 50%;
+        border-width: 0;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .number{
+        background-color: rgb(217, 223, 222);
+        border: hidden;
+    }
+    .number:active{
+        font-size: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37), 0 6px 20px 0 rgba(0, 0, 0, 0.432);
+    }
+    .addition {
+        grid-column: 4/5;
+        grid-row: 1/1;
+        font-size: 20px;
+        background-color: rgb(15, 108, 103);
+    }
+    .multiplication {
+        grid-column: 4/5;
+        grid-row: 2/2;
+        font-size: 20px;
+        background-color: rgb(199, 132, 9);
+    }
+    .subtraction {
+        grid-column: 4/5;
+        grid-row: 3/3;
+        font-size: 20px;
+	background-color: rgb(211, 86, 86);
+    }
+    
+    .division {
+        grid-column: 4/5;
+        grid-row: 4/4;
+        font-size: 20px;
+	background-color: rgb(72, 96, 182);
+    }
+    .total {
+        grid-column: 4/5;
+        grid-row: 5/5;
+        font-size: 20px;
+	background-color: rgb(117, 75, 156);
+    }
+    #clear {
+        grid-column: 2/3;
+        grid-row: 1/1;
+        font-size: 20px;
+        background-color: rgb(43, 180, 43);
+    }
+    .subtraction:active , .multiplication:active,
+    .division:active, .total:active, .clear:active,
+    .addition:active
+    {
+        font-size: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37), 0 6px 20px 0 rgba(0, 0, 0, 0.432);
+    }
+    .one {
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+    .two{
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    .three{
+        grid-column: 3/4;
+        grid-row: 2/2;
+    }
+    .four{
+        grid-column: 1/2;
+        grid-row: 3/3;
+    }
+    .five{
+        grid-column: 2/3;
+        grid-row: 3/3;
+    }
+    .six{
+        grid-column: 3/4;
+        grid-row: 3/3;
+    }
+    .seven{
+        grid-column: 1/2;
+        grid-row: 4/4;
+    }
+    .eight{
+        grid-column: 2/3;
+        grid-row: 4/4;
+    }
+    .nine{
+        grid-column: 3/4;
+        grid-row: 4/4;
+    }
+    .zero{
+        grid-column: 2/3;
+        grid-row: 5/5;
+    }
+    .decimal{
+        grid-column: 3/4;
+        grid-row: 5/5;
+    }
+    @media screen and ( max-width:1024px) {
+        body{
+         
+            background-image:url(ja.jpg); 
+        }
+        #wrapper {
+            width: 800px;
+            height: 1200px;
+            background-color: rgba(0, 0, 0, 0);
+            margin: auto auto; 
+        }
+            #calculator{
+                width: 500px;
+                height: 600px;
+                margin: 10px auto;
+                
+            }
+        
+    
+    }
+    
+    @media screen and ( max-width:768px) {
+        body {
+            background-image: none;
+            background-image:url(ja3.jpg); }
+            #wrapper {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0);;
+                margin: 2px auto; }
+                #calculator{
+                    width: 90%;
+                    height: 600px;
+                    margin: 10px auto;
+                    
+                }
+                
+            
+        
+    }
+    @media screen and ( max-width:414px) {
+        #wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);;
+            margin: 2px auto;
+            padding: 10px;
+            position: relative;
+            right: 10px;
+        }
+        body {
+            background-image: none;
+            background-image:url(ja4.jpg);
+                }
+                #calculator{
+                    height: 600px;
+                    position: relative;
+            right: 30px;
+                    
+                    
+                }}
